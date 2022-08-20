@@ -14,12 +14,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/qualcomm/lahaina/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lahaina
-PRODUCT_NAME := omni_lahaina
+PRODUCT_NAME := twrp_lahaina
 PRODUCT_BRAND := qti
 PRODUCT_MODEL := Lahaina for arm64
 PRODUCT_MANUFACTURER := qualcomm
